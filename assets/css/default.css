@@ -1,0 +1,103 @@
+@import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');
+@import url('http://fonts.googleapis.com/css?family=Raleway:400,600');
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'dotum', 'sans-serif';
+	font-size: 12px;
+	background-color: #90bcab;
+	color: #333333;
+	line-height: 1.2;
+	overflow: hidden;
+	position: relative;
+}
+
+.popup_open {
+	display: block;
+	width: 280px;
+	height: 37px;
+	margin: 240px auto;
+	background-color: #ffffff;
+	border: 1px solid #bf3838;
+	border-bottom: 3px solid #b02222;
+	border-radius: 5px;
+	color: #b02222;
+	font-family: 'Nanum Gothic', 'dotum', 'sans-serif';
+	font-size: 14px;
+	line-height: 37px;
+	text-align: center;
+	text-decoration: none;
+	-o-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.popup_open:hover {
+	background-color: #b73636;
+	color: #ffffff;
+}
+
+.popup_open:active {
+	padding-top: 2px;
+	border-bottom-width: 1px;
+}
+
+#popup {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 500px;
+	background-color: #ffffff;
+	border: 1px solid #cf6060;
+	border-radius: 5px;
+	-moz-box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+	box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+}
+
+#popup .item_header {
+	padding: 20px;
+	font-family: 'Nanum Gothic', 'dotum', 'sans-serif';
+	font-size: 16px;
+	font-weight: 600;
+	background-color: #cf6060;
+	color: #ffffff;
+	border-bottom: 1px solid #d8d8d8;
+	overflow: hidden;
+}
+
+#popup .item_header .btn_close {
+	float: right;
+	margin-top: 2px;
+}
+
+#popup .item_content {
+	padding: 60px 20px;
+	font-family: 'Raleway', 'sans-serif';
+	font-size: 16px;
+	color: #555555;
+	text-align: center;
+}
+
+/* Syntax Highlight */
+.ha {
+	color: #b72222 !important;
+	font-weight: 600;
+}
+
+.hc {
+	color: #a03838 !important;
+}
+
+.hs {
+	color: #555555 !important;
+}
+
+.hm {
+	color: #10707f !important;
+}

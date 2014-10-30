@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>PIGNOSE Popup</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/default.css" />
+	<script type="text/javascript" src="assets/js/jquery.1.11.1.core.js"></script>
+	<script type="text/javascript" src="assets/js/pignose.popup.js"></script>
+	<script type="text/javascript">
+	//<![CDATA[
+	$(function() {
+		$('.popup_open').bind('click', function(event) {
+			$('#popup').pignosePopup();
+			event.preventDefault();
+		});
+	});
+	//]]>
+	</script>
+</head>
+<body>
+	<a class="popup_open" href="#">팝업띄우기</a>
+	<div id="popup">
+		<div class="item_header">
+			샘플입니다
+			<a href="#" class="btn_close"><img src="assets/img/icon_close.gif" alt="창 닫기" /></a>
+		</div>
+		<div class="item_content">
+			<span class="ha">$</span><span class="hm">(</span><span class="hc">'</span><span class="hs">#popup</span><span class="hc">'</span><span class="hm">).</span><span class="ha">pignosePopup</span><span class="hm">();</span>
+		</div>
+	</div>
+</body>
+</html>
