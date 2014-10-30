@@ -3,7 +3,7 @@
 *  - PIGNOSE Popup JS
 *  - DATE    2014-10-31
 *  - AUTHOR  PIGNOSE
-*  - VERSION 0.0.1
+*  - VERSION 0.0.2
 *  - LICENCE MIT
 *
 ****************************************/
@@ -14,14 +14,14 @@
 		name:       'PIGNOSE Popup JS',
 		createDate: '2014-10-31',
 		updateDate: '2014-10-31',
-		version:    '0.0.1',
+		version:    '0.0.2',
 		author:     'kenneth ceyer',
 		email:      'kennethan@nhpcw.com',
 		dev:        {
 			handler: '.pignosePopupHandler'
 		},
 		plugin:     {
-			this:      null,
+			item:      null,
 			tint:      null,
 			doc:       true
 		}
@@ -50,7 +50,7 @@
 		},
 		_excute: function(func, args) {
 			if(typeof func === 'function' && func != null) {
-				func.call(_config.plugin.this, args);
+				func.call(_config.plugin.item, args);
 			}
 		},
 		_extend: function(object, func) {
@@ -70,7 +70,7 @@
 				zIndex:    1000000,
 				btn_close: '.btn_close'
 			}, options), $this = $(this);
-			_config.plugin.this = $this;
+			_config.plugin.item = $this;
 			_interface._excute(_interface.open, opt);
 
 			return $this;
