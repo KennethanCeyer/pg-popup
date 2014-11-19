@@ -2,8 +2,8 @@
 *
 *  - PIGNOSE Popup JS
 *  - DATE    2014-10-31
-*  - AUTHOR  PIGNOSE
-*  - VERSION 0.0.2
+*  - AUTHOR  PIGNOSE (http://kennethan.dothome.co.kr)
+*  - VERSION 0.0.5
 *  - LICENCE MIT
 *
 ****************************************/
@@ -13,8 +13,8 @@
 	var _config = {
 		name:       'PIGNOSE Popup JS',
 		createDate: '2014-10-31',
-		updateDate: '2014-10-31',
-		version:    '0.0.2',
+		updateDate: '2014-11-19',
+		version:    '0.0.4',
 		author:     'kenneth ceyer',
 		email:      'kennethan@nhpcw.com',
 		dev:        {
@@ -64,15 +64,19 @@
 		// Define contruction method.
 		init: function(options) {
 			var opt = $.extend({
+				animate:   true,
+				escape:    true,
 				time:      300,
 				tint:      '#000000',
 				opacity:   0.6,
-				zIndex:    1000000,
+				zIndex:    500,
+				scroll:    false,
 				btn_close: '.btn_close'
-			}, options), $this = $(this);
+			}, options), $this = this;
+
 			_config.plugin.item = $this;
 			_interface._excute(_interface.open, opt);
-
+			
 			return $this;
 		},
 		setTint: function(opt) {
@@ -85,7 +89,7 @@
 			}
 
 			$pignose_tint.css({
-				position:        'absolute',
+				position:        'fixed',
 				left:            '0',
 				top:             '0',
 				width:           '100%',
@@ -97,14 +101,22 @@
 				backgroundColor: opt.tint,
 				opacity:         opt.opacity
 			});
-
-			_interface._bind($pignose_tint, 'click', function() {
-				_interface._excute(_interface.close, opt);
-			});
+			
+			if(opt.escape === true) {
+				_interface._bind($pignose_tint, 'click', function() {
+					_interface._excute(_interface.close, opt);
+				});
+			}
 
 			$pignose_tint.appendTo('body');
-			$pignose_tint.stop().fadeIn(opt.time);
 			_config.plugin.tint = $pignose_tint;
+
+			if(opt.animate === true) {
+				$pignose_tint.stop().fadeIn(opt.time);
+			}
+			else {
+				$pignose_tint.show();
+			}
 		},
 		setPopup: function(opt) {
 			var $window = $(window);
@@ -113,7 +125,14 @@
 				$this.css({
 					position: 'absolute',
 					zIndex:   opt.zIndex + 1
-				}).stop().fadeIn(opt.time);
+				});
+				
+				if(opt.animate === true) {
+					$this.stop().fadeIn(opt.time);
+				}
+				else {
+					$this.show();
+				}
 				
 			});
 			_interface._bind($window, 'resize', function() {
@@ -121,15 +140,28 @@
 					var $this = $(this);
 					$this.css({
 						left: ($window.width()  - $this.outerWidth(true))  / 2,
-						top:  ($window.height() - $this.outerHeight(true)) / 2
+						top:  ($window.height() - $this.outerHeight(true)) / 2 + $window.scrollTop(),
+						left: ($window.width()  - $this.outerWidth(true))  / 2 + $window.scrollLeft()
 					});
 				});
 			}, true);
+			if(opt.scroll === true) {
+				_interface._bind($window, 'scroll', function() {
+					$this.css({
+						top:  ($window.height() - $this.outerHeight(true)) / 2 + $window.scrollTop(),
+						left: ($window.width()  - $this.outerWidth(true))  / 2 + $window.scrollLeft()
+					});
+				});
+			}
+			_interface._bind($this, 'close', function() {
+				_interface._excute(_interface.close, opt);
+			});
 			_interface._bind($this, 'click', function(event) {
 				event.stopPropagation();
 			});
-			_interface._bind($this.find(opt.btn_close), 'click', function() {
+			_interface._bind($this.find(opt.btn_close), 'click', function(event) {
 				_interface._excute(_interface.close, opt);
+				event.preventDefault();
 			});
 		},
 		open: function(opt) {
@@ -137,8 +169,14 @@
 			_interface._excute(_interface.setPopup, opt);
 		},
 		close: function(opt) {
-			this.stop().fadeOut(opt.time);
-			_config.plugin.tint.stop().fadeOut(opt.time);
+			if(opt.animate === true) {
+				this.stop().fadeOut(opt.time);
+				_config.plugin.tint.stop().fadeOut(opt.time);
+			}
+			else {
+				this.hide();
+				_config.plugin.tint.hide();
+			}
 		}
 	}
 
