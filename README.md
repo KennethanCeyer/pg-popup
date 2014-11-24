@@ -10,3 +10,10 @@ PIGNOSE Layer popup plugin Lightweight and simple modal popup.
 
 ###Demo
 [http://kennethan.dothome.co.kr/workshop/popup](http://kennethan.dothome.co.kr/workshop/popup)
+
+###Options
+| Option    | Default     | Type         | Description                                                                |
+|-----------|-------------|--------------|----------------------------------------------------------------------------|
+| animate   | true        | Boolean      | Use animation when popup opened.                                           |
+| btn_close | .btn_close  | String       | This option provide to bind to close of popup function on button by jQuery Select as String type. |
+| escape    | true        | Boolean      | This option provide to bind to close function on background of popup 
