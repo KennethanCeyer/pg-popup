@@ -1,8 +1,7 @@
 PIGNOSE-Popup
 =============
 
-*PIGNOSE Layer popup plugin*
-Lightweight and simple modal popup.
+PIGNOSE Layer popup plugin Lightweight and simple modal popup.
 
 ###Usage
 1. import ```jquery library``` ([Download link](http://www.jquery.com/download/)).
