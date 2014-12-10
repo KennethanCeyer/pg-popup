@@ -3,7 +3,7 @@
 *  - PIGNOSE Popup JS
 *  - DATE    2014-10-31
 *  - AUTHOR  PIGNOSE (http://kennethan.dothome.co.kr)
-*  - VERSION 0.0.5
+*  - VERSION 0.0.6
 *  - LICENCE MIT
 *
 ****************************************/
@@ -13,8 +13,8 @@
 	var _config = {
 		name:       'PIGNOSE Popup JS',
 		createDate: '2014-10-31',
-		updateDate: '2014-11-19',
-		version:    '0.0.4',
+		updateDate: '2014-12-10',
+		version:    '0.0.6',
 		author:     'kenneth ceyer',
 		email:      'kennethan@nhpcw.com',
 		dev:        {
@@ -65,13 +65,13 @@
 		init: function(options) {
 			var opt = $.extend({
 				animate:   true,
+				btn_close: '.btn_close',
 				escape:    true,
 				time:      300,
 				tint:      '#000000',
 				opacity:   0.6,
-				zIndex:    500,
 				scroll:    false,
-				btn_close: '.btn_close'
+				zIndex:    500,
 			}, options), $this = this;
 
 			_config.plugin.item = $this;
@@ -196,4 +196,4 @@
 			return ERROR_FLAG;
 		}
 	};
-})(jQuery);
+}) (jQuery);
