@@ -11,9 +11,6 @@ PIGNOSE-Popup
 2. import ```PIGNOSE-Popup.js```.
 3. just type ```$select.pignosePopup();```.
 
-####Demo
-[http://kennethan.dothome.co.kr/workshop/popup](http://kennethan.dothome.co.kr/workshop/popup)
-
 ####Options
 
 | Option    | Default     | Type         | Description                                                                |
