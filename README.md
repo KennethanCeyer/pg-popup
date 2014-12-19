@@ -1,7 +1,7 @@
 PIGNOSE-Popup
 ==
 * Version 0.0.6
-* Update OCT 31 2014
+* Update Oct 31 2014
 * [Show demo](http://kennethan.dothome.co.kr/barn/PIGNOSE-Popup/)
 
 > PIGNOSE Layer popup plugin Lightweight and simple modal popup.
