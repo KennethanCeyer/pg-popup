@@ -3,7 +3,7 @@ PIGNOSE-Popup
 * Version 0.0.6
 * Update Oct 31 2014
 * [See demo](http://www.pigno.se/barn/PIGNOSE-Popup/)
-* It works on IE 7+, FF, Chrome, Opera and Safari
+* It works on IE 8+, FF, Chrome, Opera and Safari
 
 > PIGNOSE Layer popup is lightweight and a simple modal popup.
 
