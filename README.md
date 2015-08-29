@@ -7,7 +7,8 @@ PIGNOSE-Popup
 > PIGNOSE Layer popup is lightweight and a simple modal popup.
 
 The modal uses flat design.
-![GitHub Logo](http://www.pigno.se/barn/PIGNOSE-Popup/assets/img/sample.jpg)
+
+![The modal design](http://www.pigno.se/barn/PIGNOSE-Popup/assets/img/sample.jpg)
 
 ####Usage
 1. import ```jquery library``` ([Download link](http://www.jquery.com/download/)).
