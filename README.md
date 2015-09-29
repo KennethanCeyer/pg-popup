@@ -1,13 +1,13 @@
 PIGNOSE-Popup
 ==
 * Version 0.0.6
-* Update Oct 31 2014
+* Updated Oct 31 2014
 * [See demo](http://www.pigno.se/barn/PIGNOSE-Popup/)
 * It works on IE 8+, FF, Chrome, Opera and Safari
 
 > PIGNOSE Layer popup is lightweight and a simple modal popup.
 
-The modal uses flat design.
+The modal that it uses flat design.
 
 ![The modal design](http://www.pigno.se/barn/PIGNOSE-Popup/assets/img/sample.jpg)
 
