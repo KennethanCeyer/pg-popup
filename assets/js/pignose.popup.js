@@ -11,6 +11,7 @@
 (function($) {
 	// Plugin common configuration.
 	var _config = {
+		id:         'pignose-popup',
 		name:       'PIGNOSE Popup JS',
 		createDate: '2014-10-31',
 		updateDate: '2014-12-10',
@@ -72,12 +73,13 @@
 				opacity:   0.6,
 				scroll:    false,
 				zIndex:    500,
-			}, options), $this = this;
+			}, options), _this = this;
 
-			_config.plugin.item = $this;
+			_this.addClass(_config.id);
+			_config.plugin.item = _this;
 			_interface._excute(_interface.open, opt);
 			
-			return $this;
+			return _this;
 		},
 		setTint: function(opt) {
 			if($('.pignose_tint').length < 1) {
