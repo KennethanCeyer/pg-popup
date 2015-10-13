@@ -9,12 +9,28 @@ PIGNOSE-Popup
 
 The modal that it uses flat design.
 
-![The modal design](http://www.pigno.se/barn/PIGNOSE-Popup/assets/img/sample.jpg)
+## Usage
+1. Import jquery library ([Download link](http://www.jquery.com/download/)).
+2. Import pignose.popup.js.
+3. Insert snippet ```$select.pignosePopup();```
 
-####Usage
-1. import ```jquery library``` ([Download link](http://www.jquery.com/download/)).
-2. import ```PIGNOSE-Popup.js```.
-3. just type ```$select.pignosePopup();```.
+### If you are using Bower
+
+1. open a command line and type this
+
+ ```shell
+bower install pg-popup
+ ```
+ 
+2. move `assets/js/pignose.popup.js` to your project folder.
+
+### If you are using npm
+
+1. open a command line and type this
+
+ ```shell
+npm install pg-popup
+ ```
 
 ####Options
 
@@ -23,3 +39,11 @@ The modal that it uses flat design.
 | animate   | true        | Boolean      | Use animation when popup opened.                                           |
 | btn_close | .btn_close  | String       | This option provide to bind to close of popup function on button by jQuery Select as String type. |
 | escape    | true        | Boolean      | This option provide to bind to close function on background of popup
+
+## Issues
+
+> We are welcome about announcing the issue.
+
+Please inform us, If you find some problems.
+
+Thank you!
