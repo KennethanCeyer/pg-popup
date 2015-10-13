@@ -1,6 +1,7 @@
 PIGNOSE-Popup
 ==
-* Version 0.0.6
+[![Join the chat at https://gitter.im/KennethanCeyer/PIGNOSE](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/KennethanCeyer/PIGNOSE?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 * Updated Oct 31 2014
 * [See demo](http://www.pigno.se/barn/PIGNOSE-Popup/)
 * It works on IE 8+, FF, Chrome, Opera and Safari
