@@ -1,0 +1,35 @@
+{
+  "name": "jquery-flat-modal",
+  "version": "1.0.0",
+  "description": "jQuery Flat design modal popup plugin.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KennethanCeyer/jQuery-Flat-Modal.git"
+  },
+  "keywords": [
+    "jQuery",
+    "modal",
+    "plugin",
+    "design",
+    "pignose",
+    "plugin",
+    "popup",
+    "javascript",
+    "window",
+    "js",
+    "alert"
+  ],
+  "author": "Kenneth Ceyer <kennethan@nhpcw.com> (http://www.pigno.se)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KennethanCeyer/jQuery-Flat-Modal/issues"
+  },
+  "homepage": "https://github.com/KennethanCeyer/jQuery-Flat-Modal#readme",
+  "dependencies": {
+    "jquery": ">= 1.9.0"
+  },
+}
