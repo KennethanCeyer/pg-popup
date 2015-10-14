@@ -34,13 +34,20 @@ bower install pg-popup
 npm install pg-popup
  ```
 
-####Options
+#### Options
 
 | Option    | Default     | Type         | Description                                                                |
 |-----------|-------------|--------------|----------------------------------------------------------------------------|
 | animate   | true        | Boolean      | Use animation when popup opened.                                           |
 | btn_close | .btn_close  | String       | This option provide to bind to close of popup function on button by jQuery Select as String type. |
 | escape    | true        | Boolean      | This option provide to bind to close function on background of popup
+
+
+#### Colours
+
+- It support 5 type colours.
+- You can use `theme` option to 'black', 'blue', 'orange', 'mint' and null(default).
+- ![Colours](http://www.nhpcw.com/upload/colours_101515024121.png)
 
 ## Issues
 
