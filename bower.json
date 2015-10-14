@@ -1,5 +1,5 @@
 {
-  "name": "pg-popup,
+  "name": "pg-popup",
   "version": "1.0.1",
   "homepage": "https://github.com/KennethanCeyer/jQuery-Flat-Modal",
   "authors": [
@@ -36,6 +36,6 @@
     "tests"
   ],
   "dependencies": {
-    jquery: ">= 1.9.0"
+    "jquery": ">= 1.9.0"
   },
 }
