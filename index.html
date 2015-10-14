@@ -21,8 +21,6 @@
 			margin: 0 auto;
 			padding-top: 40px;
 			padding-bottom: 40px;
-			margin-bottom: 40px;
-			border-bottom: 1px solid #efefef;
 			text-align: center;
 		}
 
@@ -32,21 +30,6 @@
 			font-weight: 400;
 			font-family: 'Raleway', 'helvetica', 'sans-serif';
 			color: #333333;
-		}
-
-		#visual {
-			font-family: 'Raleway', 'helvetica', 'sans-serif';
-			text-align: center;
-		}
-
-		#visual h3 {
-			display: inline-block;
-			*display: inline;
-			*zoom: 1;
-			margin-bottom: 20px;
-			padding-left: .6em;
-			border-left: 2px solid #d8d8d8;
-			font-size: 145%;
 		}
 
 		.article {
@@ -61,6 +44,10 @@
 
 		.article h3 {
 			margin-bottom: 40px;
+		}
+
+		.article .btn {
+			margin: 0 .6em;
 		}
 
 		.article table {
@@ -94,14 +81,34 @@
 	<script type="text/javascript" src="assets/for-demo/prism.min.js"></script>
 
 	<!-- This is plugin file. -->
-	<script type="text/javascript" src="assets/js/pignose.popup.js"></script>
-	<link rel="stylesheet" type="text/css" href="assets/css/default.css" />
+	<script type="text/javascript" src="assets/js/pignose.popup.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/pignose.popup.min.css" />
 
 	<script type="text/javascript">
 	$(function() {
 		$('.btn.pg-default').bind('click', function(event) {
 			event.preventDefault();
 			$('#pg-default').pignosePopup();
+		});
+
+		$('.btn.pg-black').bind('click', function(event) {
+			event.preventDefault();
+			$('#pg-black').pignosePopup({theme: 'black'});
+		});
+
+		$('.btn.pg-blue').bind('click', function(event) {
+			event.preventDefault();
+			$('#pg-blue').pignosePopup({theme: 'blue'});
+		});
+
+		$('.btn.pg-orange').bind('click', function(event) {
+			event.preventDefault();
+			$('#pg-orange').pignosePopup({theme: 'orange'});
+		});
+
+		$('.btn.pg-mint').bind('click', function(event) {
+			event.preventDefault();
+			$('#pg-mint').pignosePopup({theme: 'mint'});
 		});
 	});
 	</script>
@@ -113,11 +120,19 @@
 			<h1>PIGNOSE Popup</h1>
 			<a href="https://github.com/KennethanCeyer/jQuery-Flat-Modal" target="_blank" class="btn btn-primary">View project on the Github</a>
 		</div>
-		<div id="visual">
+		<div class="article">
 			<h3>Default Modal</h3><br />
-			<a href="#" class="btn btn-default btn-lg pg-default">Open Modal</a>
+			<a href="#" class="btn btn-default btn-lg pg-default">Open Modal</a><br />
 		</div>
-		<<div id="content" class="article">
+		<div class="article">
+			<h3>Colour Modal</h3><br />
+			<a href="#" class="btn btn-default btn-lg pg-default">Default</a>
+			<a href="#" class="btn btn-default btn-lg pg-black">Black</a>
+			<a href="#" class="btn btn-default btn-lg pg-blue">Blue</a>
+			<a href="#" class="btn btn-default btn-lg pg-orange">Orange</a>
+			<a href="#" class="btn btn-default btn-lg pg-mint">Mint</a>
+		</div>
+		<div id="content" class="article">
 			<h3>options</h3>
 			<table class="table table-striped table-hover">
 				<thead>
@@ -146,6 +161,12 @@
 						<td><div class="label label-primary">boolean</div></td>
 						<td>true</td>
 						<td>This option provide to bind to close function on background of popup.</td>
+					</tr>
+					<tr>
+						<td>theme</td>
+						<td><div class="label label-primary">string</div></td>
+						<td>none</td>
+						<td>Custom class name for modal window.</td>
 					</tr>
 				</tbody>
 			</table>
@@ -194,6 +215,42 @@
 		</div>
 		<div class="item_content">
 			<pre><code class="language-js">('#pg-default').pignosePopup();</code></pre>
+		</div>
+	</div>
+	<div id="pg-black" class="pignose-popup">
+		<div class="item_header">
+			<span class="txt_title">Black Modal</span>
+			<a href="#" class="btn_close"><img src="assets/img/icon_close.gif" alt="close modal" /></a>
+		</div>
+		<div class="item_content">
+			<pre><code class="language-js">('#pg-black').pignosePopup({theme: 'black'});</code></pre>
+		</div>
+	</div>
+	<div id="pg-blue" class="pignose-popup">
+		<div class="item_header">
+			<span class="txt_title">Blue Modal</span>
+			<a href="#" class="btn_close"><img src="assets/img/icon_close.gif" alt="close modal" /></a>
+		</div>
+		<div class="item_content">
+			<pre><code class="language-js">('#pg-blue').pignosePopup({theme: 'blue'});</code></pre>
+		</div>
+	</div>
+	<div id="pg-orange" class="pignose-popup">
+		<div class="item_header">
+			<span class="txt_title">Orange Modal</span>
+			<a href="#" class="btn_close"><img src="assets/img/icon_close.gif" alt="close modal" /></a>
+		</div>
+		<div class="item_content">
+			<pre><code class="language-js">('#pg-orange').pignosePopup({theme: 'orange'});</code></pre>
+		</div>
+	</div>
+	<div id="pg-mint" class="pignose-popup">
+		<div class="item_header">
+			<span class="txt_title">Mint Modal</span>
+			<a href="#" class="btn_close"><img src="assets/img/icon_close.gif" alt="close modal" /></a>
+		</div>
+		<div class="item_content">
+			<pre><code class="language-js">('#pg-mint').pignosePopup({theme: 'mint'});</code></pre>
 		</div>
 	</div>
 </body>
