@@ -40,7 +40,8 @@ npm install pg-popup
 |-----------|-------------|--------------|----------------------------------------------------------------------------|
 | animate   | true        | Boolean      | Use animation when popup opened.                                           |
 | btn_close | .btn_close  | String       | This option provide to bind to close of popup function on button by jQuery Select as String type. |
-| escape    | true        | Boolean      | This option provide to bind to close function on background of popup
+| escape    | true        | Boolean      | This option provide to bind to close function on background of popup       |
+| theme     | none        | String       | Custom class name for modal window.                                        |
 
 
 #### Colours
