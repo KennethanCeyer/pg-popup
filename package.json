@@ -1,6 +1,6 @@
 {
   "name": "pg-popup",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "jQuery Flat design modal popup plugin.",
   "main": "index.html",
   "scripts": {

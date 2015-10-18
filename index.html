@@ -94,6 +94,11 @@
 			$('#pg-default').pignosePopup();
 		});
 
+		$('.btn.pg-following').bind('click', function(event) {
+			event.preventDefault();
+			$('#pg-following').pignosePopup({scroll: true});
+		});
+
 		$('.btn.pg-black').bind('click', function(event) {
 			event.preventDefault();
 			$('#pg-black').pignosePopup({theme: 'black'});
@@ -126,6 +131,10 @@
 		<div class="article">
 			<h3>Default Modal</h3><br />
 			<a href="#" class="btn btn-default btn-lg pg-default">Open Modal</a><br />
+		</div>
+		<div class="article">
+			<h3>Following Modal</h3><br />
+			<a href="#" class="btn btn-default btn-lg pg-following">Open Modal</a><br />
 		</div>
 		<div class="article">
 			<h3>Colour Modal</h3><br />
@@ -218,6 +227,15 @@
 		</div>
 		<div class="item_content">
 			<pre><code class="language-js">('#pg-default').pignosePopup();</code></pre>
+		</div>
+	</div>
+	<div id="pg-following" class="pignose-popup">
+		<div class="item_header">
+			<span class="txt_title">Following Modal</span>
+			<a href="#" class="btn_close"><img src="assets/img/icon_close.gif" alt="close modal" /></a>
+		</div>
+		<div class="item_content">
+			<pre><code class="language-js">('#pg-following').pignosePopup({scoll: true});</code></pre>
 		</div>
 	</div>
 	<div id="pg-black" class="pignose-popup">

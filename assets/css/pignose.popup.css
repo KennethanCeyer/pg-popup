@@ -15,6 +15,7 @@
 
 .pignose-popup .item_header {
 	padding: 1.2em 1.6em;
+	font-family: inherit;
 	font-size: 100%;
 	font-weight: 600;
 	background-color: #cf6060;
