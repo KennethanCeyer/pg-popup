@@ -5,7 +5,7 @@ PIGNOSE-Popup
 ![Sample](http://www.nhpcw.com/upload/2015-10-14%2B%25EC%2598%25A4%25EC%25A0%2584%2B5-14-35_101415051450.jpg)
 
 * [See demo](http://www.pigno.se/barn/PIGNOSE-Popup/)
-* It works on IE 8+, FF, Chrome, Opera and Safari
+* It works on IE 7+, FF, Chrome, Opera and Safari And `OS-X safari`.
 
 > PIGNOSE popup is lightweight and a simple modal popup.
 
