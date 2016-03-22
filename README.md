@@ -16,7 +16,7 @@ The modal that it uses flat design.
 2. Import pignose.popup.js.
 3. Insert snippet ```$select.pignosePopup();```
 
-### If you are using Bower
+### If you use Bower
 
 1. open a command line and type this
 
@@ -26,7 +26,7 @@ bower install pg-popup
  
 2. move `assets/js/pignose.popup.js` to your project folder.
 
-### If you are using npm
+### If you use npm
 
 1. open a command line and type this
 
