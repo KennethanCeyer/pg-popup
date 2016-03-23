@@ -5,20 +5,20 @@ PIGNOSE-Popup
 ![Sample](http://www.nhpcw.com/upload/2015-10-14%2B%25EC%2598%25A4%25EC%25A0%2584%2B5-14-35_101415051450.jpg)
 
 * [See demo](http://www.pigno.se/barn/PIGNOSE-Popup/)
-* It works on IE 7+, FF, Chrome, Opera and Safari And `OS-X safari`.
+* It works fine on IE 7+, FF, Chrome, Opera and Safari And `OS-X safari`.
 
-> PIGNOSE popup is lightweight and a simple modal popup.
+> PIGNOSE popup is a lightweight and simple modal popup.
 
-The modal that it uses flat design.
+The flat design modal plugin.
 
 ## Usage
-1. Import jquery library ([Download link](http://www.jquery.com/download/)).
-2. Import pignose.popup.js.
-3. Insert snippet ```$select.pignosePopup();```
+1. This requires jquery library ([Download link](http://www.jquery.com/download/)).
+2. And import pignose.popup.js on this repository.
+3. Insert snippets ```$select.pignosePopup();```
 
-### If you use Bower
+### If you use bower
 
-1. open a command line and type this
+1. open command line and type follows
 
  ```shell
 bower install pg-popup
@@ -28,7 +28,7 @@ bower install pg-popup
 
 ### If you use npm
 
-1. open a command line and type this
+1. open command line and type follows
 
  ```shell
 npm install pg-popup
@@ -47,14 +47,14 @@ npm install pg-popup
 
 #### Colours
 
-- It support 5 type colours.
-- You can use `theme` option to 'black', 'blue', 'orange', 'mint' and null(default).
+- It supports 5 type colours.
+- You can use `theme` option to set the color 'black', 'blue', 'orange', 'mint' or null(default).
 - ![Colours](http://www.nhpcw.com/upload/colours_101515024121.png)
 
 ## Issues
 
-> We are welcome about announcing the issue.
+> If you found some problems or have good idea.
 
-Please inform us, If you find some problems.
+Please report to us, we can update the problems soon
 
 Thank you!
