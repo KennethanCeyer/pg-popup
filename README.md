@@ -52,10 +52,8 @@ Move `dist/pignose.popup.min.js`, `dist/pignose.popup.min.css` to your project f
 
 ----
 
-### Issues
+### Question
 
-> If you found some problems or have good idea.
+If you found something problem of this plugin, or you have some question.
 
-Please report to us, We will update that issue as soon as possible.
-
-Thank you!
+Please send me a message to use either [gitter](https://gitter.im/KennethanCeyer/PIGNOSE) or [Github issue](https://github.com/KennethanCeyer/PIGNOSE-Popup/issues). (gitter url is on the top of the manual)
