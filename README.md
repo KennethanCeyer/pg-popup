@@ -14,11 +14,15 @@
 2. Import pignose.popup.min.js, Import pignose.popup.min.css in your head element.
 3. Insert a snippet like `$select.pignosePopup();`
 
+----
+
 #### If you use bower
 
  ```shell
 bower install pg-popup
  ```
+ 
+ ----
 
 #### If you use npm
 
@@ -27,6 +31,8 @@ npm install pg-popup
  ```
  
 Move `dist/pignose.popup.min.js`, `dist/pignose.popup.min.css` to your project folder.
+
+----
 
 ### Options
 
@@ -38,10 +44,13 @@ Move `dist/pignose.popup.min.js`, `dist/pignose.popup.min.css` to your project f
 | theme     | none        | String       | Custom class name for modal window.                                        |
 | scroll    | false       | Boolean      | This option modal will follow your scroll top.                             |
 
+----
 
 ### Colours
 
 - Support 5 colours (red, blue, black, orange, mint).
+
+----
 
 ### Issues
 
