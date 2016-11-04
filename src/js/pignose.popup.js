@@ -1,18 +1,16 @@
-/****************************************
+/*********************************************************
 *
 *  - PIGNOSE Popup JS
-*  - AUTHOR  PIGNOSE (http://kennethan.dothome.co.kr)
+*  - AUTHOR  PIGNOSE (https://www.github.com/KennethanCeyer)
 *  - LICENCE MIT
 *
-****************************************/
+********************************************************/
 
 (function($) {
 	// Plugin common configuration.
 	var _config = {
 		id:         'pignose-popup',
-		name:       'PIGNOSE Popup JS',
-		author:     'kenneth ceyer',
-		email:      'kennethan@nhpcw.com',
+		name:       'PIGNOSE Popup',
 		dev:        {
 			handler: '.pignosePopupHandler'
 		},
