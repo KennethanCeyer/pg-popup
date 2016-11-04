@@ -4,7 +4,7 @@
 
 [![npm version](https://badge.fury.io/js/pg-popup.svg)](https://badge.fury.io/js/pg-popup) [![Bower version](https://badge.fury.io/bo/pg-popup.svg)](https://badge.fury.io/bo/pg-popup) [![Join the chat at https://gitter.im/KennethanCeyer/PIGNOSE](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/KennethanCeyer/PIGNOSE?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-![Sample](http://www.nhpcw.com/upload/2015-10-14%2B%25EC%2598%25A4%25EC%25A0%2584%2B5-14-35_101415051450.jpg)
+![Screenshot Main](http://www.pigno.se/barn/PIGNOSE-Popup/demo/img/screenshot_main.png)
 
 * [See demo](http://www.pigno.se/barn/PIGNOSE-Popup/)
 * It works fine in IE 7+, FF, Chrome, Opera and Safari And `OS-X safari`.
