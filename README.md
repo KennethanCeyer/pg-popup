@@ -1,40 +1,34 @@
-PIGNOSE-Popup
-==
+# PIGNOSE-Popup
+
+> PIGNOSE Popup is simple flat design modal plugin.
+
 [![npm version](https://badge.fury.io/js/pg-popup.svg)](https://badge.fury.io/js/pg-popup) [![Bower version](https://badge.fury.io/bo/pg-popup.svg)](https://badge.fury.io/bo/pg-popup) [![Join the chat at https://gitter.im/KennethanCeyer/PIGNOSE](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/KennethanCeyer/PIGNOSE?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ![Sample](http://www.nhpcw.com/upload/2015-10-14%2B%25EC%2598%25A4%25EC%25A0%2584%2B5-14-35_101415051450.jpg)
 
 * [See demo](http://www.pigno.se/barn/PIGNOSE-Popup/)
-* It works fine on IE 7+, FF, Chrome, Opera and Safari And `OS-X safari`.
+* It works fine in IE 7+, FF, Chrome, Opera and Safari And `OS-X safari`.
 
-> PIGNOSE popup is a lightweight and simple modal popup.
+### Usage
+1. It is required jquery library ([Download link](http://www.jquery.com/download/)).
+2. Import pignose.popup.min.js, Import pignose.popup.min.css in your head element.
+3. Insert a snippet like `$select.pignosePopup();`
 
-The flat design modal plugin.
-
-## Usage
-1. This requires jquery library ([Download link](http://www.jquery.com/download/)).
-2. And import pignose.popup.js on this repository.
-3. Insert snippets ```$select.pignosePopup();```
-
-### If you use bower
-
-1. open command line and type follows
+#### If you use bower
 
  ```shell
 bower install pg-popup
  ```
- 
-2. move `assets/js/pignose.popup.js` to your project folder.
 
-### If you use npm
-
-1. open command line and type follows
+#### If you use npm
 
  ```shell
 npm install pg-popup
  ```
+ 
+Move `dist/pignose.popup.min.js`, `dist/pignose.popup.min.css` to your project folder.
 
-#### Options
+### Options
 
 | Option    | Default     | Type         | Description                                                                |
 |-----------|-------------|--------------|----------------------------------------------------------------------------|
@@ -45,16 +39,14 @@ npm install pg-popup
 | scroll    | false       | Boolean      | This option modal will follow your scroll top.                             |
 
 
-#### Colours
+### Colours
 
-- It supports 5 type colours.
-- You can use `theme` option to set the color 'black', 'blue', 'orange', 'mint' or null(default).
-- ![Colours](http://www.nhpcw.com/upload/colours_101515024121.png)
+- Support 5 colours (red, blue, black, orange, mint).
 
-## Issues
+### Issues
 
 > If you found some problems or have good idea.
 
-Please report to us, we can update the problems soon
+Please report to us, We will update that issue as soon as possible.
 
 Thank you!
